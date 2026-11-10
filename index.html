@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASADULLO — Asadullo Mirhamidullayev | Aspiring Ethical Hacker</title>
+  <meta name="description" content="Asadullo Mirhamidullayev — student, aspiring ethical hacker and future penetration tester. Web security, Python, cybersecurity research.">
+  <meta name="keywords" content="ethical hacking, penetration testing, web security, cybersecurity, Python, Asadullo Mirhamidullayev">
+  <meta name="author" content="Asadullo Mirhamidullayev">
+  <meta name="theme-color" content="#08090D">
+  <meta property="og:title" content="ASADULLO — Cybersecurity Portfolio">
+  <meta property="og:description" content="Think Like an Attacker. Build a More Secure Future.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Asosiy navigatsiya">
+      <a href="#home" class="brand" data-config="brand"></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menyu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" data-i18n="nav_home"></a></li>
+        <li><a href="#about" data-i18n="nav_about"></a></li>
+        <li><a href="#specialization" data-i18n="nav_spec"></a></li>
+        <li><a href="#skills" data-i18n="nav_skills"></a></li>
+        <li><a href="#roadmap" data-i18n="nav_roadmap"></a></li>
+        <li><a href="#projects" data-i18n="nav_projects"></a></li>
+        <li><a href="#writeups" data-i18n="nav_writeups"></a></li>
+        <li><a href="#contact" data-i18n="nav_contact"></a></li>
+        <li>
+          <div class="lang-switch" role="group" aria-label="Til / Language">
+            <button class="lang-btn" data-lang="uz" aria-pressed="false">UZ</button>
+            <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            <button class="lang-btn" data-lang="de" aria-pressed="false">DE</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true"><canvas id="network"></canvas></div>
+      <div class="container">
+        <div class="status-pill"><span class="dot"></span><span data-i18n="status_label"></span></div>
+        <p class="brand-tag" data-config="brand"></p>
+        <h1 data-i18n="hero_title"></h1>
+        <p class="hero-name" data-i18n="hero_name"></p>
+        <p class="hero-identity" data-i18n="hero_identity"></p>
+        <p class="typing" id="typing" aria-live="polite"></p>
+        <p class="hero-desc" data-i18n="hero_desc"></p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-i18n="btn_explore"></a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="btn_contact"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <img id="profile-img" src="" alt="Asadullo Mirhamidullayev">
+        </div>
+        <div class="about-text reveal">
+          <p class="eyebrow">01 — About</p>
+          <h2 data-i18n="about_title"></h2>
+          <p data-i18n="about_p1"></p>
+          <p data-i18n="about_p2"></p>
+          <div class="facts">
+            <div class="fact"><small data-i18n="about_status"></small><strong data-i18n="about_status_v"></strong></div>
+            <div class="fact"><small data-i18n="about_goal"></small><strong data-i18n="about_goal_v"></strong></div>
+            <div class="fact"><small data-i18n="about_interest"></small><strong data-i18n="about_interest_v"></strong></div>
+            <div class="fact"><small data-i18n="about_exploring"></small><strong data-i18n="about_exploring_v"></strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALIZATION -->
+    <section id="specialization" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 — Specialization</p>
+          <h2 data-i18n="spec_title"></h2>
+          <p class="section-note" data-i18n="spec_note"></p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal"><div class="card-icon">EH</div><h3 data-i18n="spec_eh_t"></h3><p class="muted" data-i18n="spec_eh_d"></p><div class="tag-row"><span>Linux</span><span>OSINT</span></div></article>
+          <article class="card reveal"><div class="card-icon">PT</div><h3 data-i18n="spec_pt_t"></h3><p class="muted" data-i18n="spec_pt_d"></p><div class="tag-row"><span>Nmap</span><span>Burp Suite</span></div></article>
+          <article class="card reveal"><div class="card-icon">WA</div><h3 data-i18n="spec_wa_t"></h3><p class="muted" data-i18n="spec_wa_d"></p><div class="tag-row"><span>OWASP Top 10</span><span>HTML/JS</span></div></article>
+          <article class="card reveal"><div class="card-icon">NS</div><h3 data-i18n="spec_ns_t"></h3><p class="muted" data-i18n="spec_ns_d"></p><div class="tag-row"><span>Wireshark</span><span>Networking</span></div></article>
+          <article class="card reveal"><div class="card-icon">VA</div><h3 data-i18n="spec_va_t"></h3><p class="muted" data-i18n="spec_va_d"></p><div class="tag-row"><span>Nmap</span></div></article>
+          <article class="card reveal"><div class="card-icon">SR</div><h3 data-i18n="spec_sr_t"></h3><p class="muted" data-i18n="spec_sr_d"></p><div class="tag-row"><span>Python</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 — Tech Stack</p>
+          <h2 data-i18n="skills_title"></h2>
+          <p class="section-note" data-i18n="skills_note"></p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <h3 data-i18n="cat_prog"></h3>
+            <p class="muted">Python — <span data-i18n="lvl_working"></span></p>
+            <p class="muted">C++ — <span data-i18n="lvl_learning"></span></p>
+            <p class="muted">C# — <span data-i18n="lvl_learning"></span></p>
+            <p class="muted">JavaScript — <span data-i18n="lvl_working"></span></p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="cat_front"></h3>
+            <p class="muted">HTML5 — <span data-i18n="lvl_working"></span></p>
+            <p class="muted">CSS3 — <span data-i18n="lvl_working"></span></p>
+            <p class="muted">JavaScript — <span data-i18n="lvl_working"></span></p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="cat_game"></h3>
+            <p class="muted">Unity Engine — <span data-i18n="lvl_working"></span></p>
+            <p class="muted">Unreal Engine — <span data-i18n="lvl_exploring"></span></p>
+          </article>
+        </div>
+        <p class="subhead" data-i18n="cat_sec"></p>
+        <div class="grid grid-3">
+          <article class="card reveal"><h3>Linux</h3><p class="muted" data-i18n="lvl_learning"></p></article>
+          <article class="card reveal"><h3>Networking</h3><p class="muted" data-i18n="lvl_learning"></p></article>
+          <article class="card reveal"><h3>Nmap</h3><p class="muted" data-i18n="lvl_exploring"></p></article>
+          <article class="card reveal"><h3>Wireshark</h3><p class="muted" data-i18n="lvl_exploring"></p></article>
+          <article class="card reveal"><h3>Burp Suite</h3><p class="muted" data-i18n="lvl_exploring"></p></article>
+          <article class="card reveal"><h3>OWASP Top 10</h3><p class="muted" data-i18n="lvl_learning"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 — Roadmap</p>
+          <h2 data-i18n="road_title"></h2>
+          <p class="section-note" data-i18n="road_note"></p>
+        </div>
+        <ol class="roadmap" id="roadmap-list"></ol>
+      </div>
+    </section>
+
+    <!-- LABS -->
+    <section id="labs" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">05 — Labs &amp; CTF</p>
+          <h2 data-i18n="labs_title"></h2>
+          <p class="section-note" data-i18n="labs_note"></p>
+        </div>
+        <div class="grid grid-3" id="labs-grid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">06 — Projects</p>
+          <h2 data-i18n="proj_title"></h2>
+          <p class="section-note" data-i18n="proj_note"></p>
+        </div>
+        <div class="grid grid-3" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- WRITEUPS -->
+    <section id="writeups" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">07 — Writeups</p>
+          <h2 data-i18n="write_title"></h2>
+          <p class="section-note" data-i18n="write_note"></p>
+        </div>
+        <div class="grid grid-2" id="writeups-list"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">08 — Contact</p>
+          <h2 data-i18n="contact_title"></h2>
+          <p class="muted" data-i18n="contact_desc"></p>
+          <div class="contact-cards">
+            <a class="contact-card" href="#" data-config="telegram">
+              <div><small>Telegram</small><strong>@Asadullo_coding</strong></div><span class="arrow">→</span>
+            </a>
+            <a class="contact-card" href="#" data-config="github">
+              <div><small>GitHub</small><strong>Asadullo-dev</strong></div><span class="arrow">→</span>
+            </a>
+            <a class="contact-card" href="#" data-config="email">
+              <div><small>Email</small><strong></strong></div><span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="f-name" data-i18n="form_name"></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+            <div class="err" data-err="name"></div>
+          </div>
+          <div class="field">
+            <label for="f-email" data-i18n="form_email"></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+            <div class="err" data-err="email"></div>
+          </div>
+          <div class="field">
+            <label for="f-msg" data-i18n="form_msg"></label>
+            <textarea id="f-msg" name="message" required></textarea>
+            <div class="err" data-err="message"></div>
+          </div>
+          <button class="btn btn-primary" type="submit" data-i18n="form_send"></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong data-config="brand"></strong> · <span data-i18n="footer_motto"></span>
+      </div>
+      <div class="links">
+        <a href="#" data-config="github">GitHub</a>
+        <a href="#" data-config="telegram">Telegram</a>
+        <a href="#" data-config="email">Email</a>
+      </div>
+      <div>© <span id="year"></span> · <span data-i18n="footer_rights"></span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+
+  <script type="module" src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(18px); filter: blur(6px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+
+.hero .status-pill, .hero .brand-tag, .hero h1, .hero-name, .hero-identity, .hero-desc, .hero-actions {
+  animation: hero-in .9s cubic-bezier(.2,.7,.2,1) both;
+}
+.hero h1 { animation-delay: .15s; }
+.hero-name { animation-delay: .05s; }
+.hero-identity { animation-delay: .25s; }
+.hero-desc { animation-delay: .35s; }
+.hero-actions { animation-delay: .45s; }
+
+.about-visual { animation: float-slow 8s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .about-visual { animation: none; }
+  .reveal { opacity: 1; transform: none; }
+  .cursor-glow { display: none; }
+}

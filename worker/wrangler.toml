@@ -1,0 +1,11 @@
+name = "portfolio-contact"
+main = "contact-worker.js"
+compatibility_date = "2024-09-01"
+
+# Replace with your GitHub Pages origin (no trailing slash).
+[vars]
+ALLOWED_ORIGIN = "https://Asadullo-dev.github.io"
+
+# Set these as secrets, not here:
+#   npx wrangler secret put TELEGRAM_BOT_TOKEN
+#   npx wrangler secret put TELEGRAM_CHAT_ID
